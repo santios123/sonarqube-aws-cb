@@ -31,4 +31,3 @@ phases:
   post_build:
     commands:
       - echo "Post build phase ..."
-  discard-paths: yes
