@@ -1,5 +1,5 @@
 version: 0.2
-environment_variables:
+env:
   secrets-manager:
     LOGIN: local/sonar:sonartoken
     HOST: local/sonar:HOST
