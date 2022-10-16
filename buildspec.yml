@@ -7,8 +7,10 @@ env:
     Project: local/sonar:Project
 phases:
   install:
+    commands:
+      - echo "Install phase ..."
     runtime-versions:
-      java: openjdk8
+      nodejs: 12
   pre_build:
     commands:
       - echo "Pre build phase ..."
