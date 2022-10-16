@@ -1,0 +1,25 @@
+version: 1.0
+environment_variables:
+  plaintext:
+    NODE_ENV: development
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y curl
+      - apt-get install -y vim
+  pre_build:
+    commands:
+      - echo "Pre build phase ..."
+  build:
+    commands:
+      - echo "Build phase ..."
+      - npm install
+  post_build:
+    commands:
+      - echo "Post build phase ..."
+artifacts:
+  type: zip
+  files:
+      - dist/app.zip
+  discard-paths: yes
